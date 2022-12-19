@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatisOperator", "WhatisOperator.csproj", "{136010C3-5A07-451C-A61A-5945F975C25F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{F3EB5844-C6DA-478F-941D-B5C00FA01FC4}"
+	ProjectSection(SolutionItems) = preProject
+		Class1.cs = Class1.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{136010C3-5A07-451C-A61A-5945F975C25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136010C3-5A07-451C-A61A-5945F975C25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136010C3-5A07-451C-A61A-5945F975C25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136010C3-5A07-451C-A61A-5945F975C25F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E30D24F6-ADB2-4B26-B675-24331F76EE30}
+	EndGlobalSection
+EndGlobal
