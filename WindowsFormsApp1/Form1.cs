@@ -11,19 +11,32 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Graphics graphics = e.Graphics;
-            Rectangle rect = new Rectangle(50, 50, 100, 100);
-            Pen pen = new Pen(Color.Red, 10);
-            graphics.DrawRectangle(pen, rect);
-            Brush brush = new SolidBrush(Color.DarkCyan);
-            graphics.FillRectangle(brush, rect);
-            Font font = new Font("고딕", 12);
-            graphics.DrawString("50,50", font, Brushes.Black, new PointF(25, 25));
-            graphics.DrawString("150,150", font, Brushes.Black, new PointF(125, 163));
+            Graphics g = this.panel1.CreateGraphics();
+            Pen p = new Pen(Color.Black, 3);
+
+            g.DrawLine(p, new Point(20,20),new Point(300, 20));
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Graphics g = this.panel1.CreateGraphics();
+            Pen p = new Pen(Color.Blue, 2);
+            PointF[] pointFs = { new PointF(50,50), new PointF(20,100), new PointF(100,100) };
+
+            g.DrawPolygon(p, pointFs);
+
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Graphics g = this.panel1.CreateGraphics();
+            Pen p = new Pen(Color.Red, 2);
+
+            g.DrawRectangle(p, new Rectangle(20, 120, 200, 100));
         }
 
-
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+        }
     }
 }

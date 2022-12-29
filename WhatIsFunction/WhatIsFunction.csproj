@@ -9,8 +9,12 @@
 
   <ItemGroup>
     <Compile Remove="MineGame.cs" />
-    <Compile Remove="Program.cs" />
+    <Compile Remove="MovingPerson.cs" />
     <Compile Remove="TicTacToe.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="과제_김초원_20221226.zip" />
   </ItemGroup>
 
 </Project>
