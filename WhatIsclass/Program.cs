@@ -6,7 +6,10 @@ namespace WhatIsclass
     {
         static void Main(string[] args)
         {
-            
+            Battle battle = new Battle();
+
+            //Description description = new Description();
+            //description.ValueTypeAndReferenceType();
 
             /**
              * 1 ~ 10 K,Q,J -> 13개
