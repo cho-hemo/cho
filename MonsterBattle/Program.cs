@@ -33,10 +33,31 @@ namespace MonsterBattle
         {
             monsterDefence = random.Next(0, defence + 1);
         }
-
+        public string Name
+        {
+            get { return this.name; }
+            private set { this.name = value; }
+        }
+        public int HP
+        {
+            get { return this.hp; }
+            private set { this.hp = value; }
+        }
+        public int Damage
+        {
+            get { return this.damage; }
+            private set { this.damage = value; }
+        }
+        public int Defence
+        {
+            get { return this.defence; }
+            private set { this.defence = value; }
+        }
     }
     class Slime : Monster
     {
+
+
         public Slime()
         {
             name = "귀여운 슬라임";
