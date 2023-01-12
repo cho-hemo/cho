@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,65 +12,65 @@ namespace WhatisOperator
         static void Main(string[] args)
         {
             /**
-             * ìˆœì°¨ë¬¸ : ìˆœì°¨ êµ¬ì¡°. Main() ë©”ì„œë“œ ì‹œìž‘ ì§€ì ë¶€í„° ë ì§€ì ê¹Œì§€ ì½”ë“œê°€ ë‚˜ì—´ë˜ë©´ ìˆœì„œëŒ€ë¡œ ì‹¤í–‰ í›„ ì¢…ë£Œ.
-             * ì œì–´ë¬¸ : í”„ë¡œê·¸ëž¨ ì‹¤í–‰ ìˆœì„œë¥¼ ì œì–´, ë‚´ìš©ì„ ë°˜ë³µí•˜ëŠ” ìž‘ì—… ë“±ì„ ì²˜ë¦¬í•  ë•Œ ì‚¬ìš©í•˜ëŠ” êµ¬ë¬¸. ì¡°ê±´ë¬¸ê³¼ ë°˜ë³µë¬¸.
-             * ì¡°ê±´ë¬¸ : ì„ íƒ êµ¬ì¡°. ì¡°ê±´ì˜ ì°¸, ê±°ì§“ì— ë”°ë¼ ì„œë¡œ ë‹¤ë¥¸ ëª…ë ¹ë¬¸ì„ ì‹¤í–‰í•  ìˆ˜ ìžˆëŠ” êµ¬ì¡°. (=ë¶„ê¸°ë¬¸,ë¹„êµíŒë‹¨ë¬¸)
-             * ë°˜ë³µë¬¸ : ë°˜ë³µ êµ¬ì¡°. íŠ¹ì • ëª…ë ¹ë¬¸ì„ ì§€ì •ëœ ìˆ˜ë§Œí¼ ë°˜ë³µí•´ì„œ ì‹¤í–‰í•  ë•Œë‚˜ ì¡°ê±´ì‹ì´ ì°¸ì¼ ë™ì•ˆ ë°˜ë³µ.
+             * ¼øÂ÷¹® : ¼øÂ÷ ±¸Á¶. Main() ¸Þ¼­µå ½ÃÀÛ ÁöÁ¡ºÎÅÍ ³¡ ÁöÁ¡±îÁö ÄÚµå°¡ ³ª¿­µÇ¸é ¼ø¼­´ë·Î ½ÇÇà ÈÄ Á¾·á.
+             * Á¦¾î¹® : ÇÁ·Î±×·¥ ½ÇÇà ¼ø¼­¸¦ Á¦¾î, ³»¿ëÀ» ¹Ýº¹ÇÏ´Â ÀÛ¾÷ µîÀ» Ã³¸®ÇÒ ¶§ »ç¿ëÇÏ´Â ±¸¹®. Á¶°Ç¹®°ú ¹Ýº¹¹®.
+             * Á¶°Ç¹® : ¼±ÅÃ ±¸Á¶. Á¶°ÇÀÇ Âü, °ÅÁþ¿¡ µû¶ó ¼­·Î ´Ù¸¥ ¸í·É¹®À» ½ÇÇàÇÒ ¼ö ÀÖ´Â ±¸Á¶. (=ºÐ±â¹®,ºñ±³ÆÇ´Ü¹®)
+             * ¹Ýº¹¹® : ¹Ýº¹ ±¸Á¶. Æ¯Á¤ ¸í·É¹®À» ÁöÁ¤µÈ ¼ö¸¸Å­ ¹Ýº¹ÇØ¼­ ½ÇÇàÇÒ ¶§³ª Á¶°Ç½ÄÀÌ ÂüÀÏ µ¿¾È ¹Ýº¹.
              * 
-             * if / else ë¬¸
-             * í”„ë¡œê·¸ëž¨ íë¦„ì„ ì—¬ëŸ¬ê°ˆëž˜ë¡œ ê°€ì§€ì¹˜ê¸°(Branching) í•  ë•Œ ì‚¬ìš©.
-             * ì¡°ê±´ì„ ë¹„êµí•´ì„œ íŒë‹¨í•˜ëŠ” êµ¬ë¬¸ìœ¼ë¡œ if, else if, else ì„¸ê°€ì§€ í‚¤ì›Œë“œ ì‚¬ìš©.
+             * if / else ¹®
+             * ÇÁ·Î±×·¥ Èå¸§À» ¿©·¯°¥·¡·Î °¡ÁöÄ¡±â(Branching) ÇÒ ¶§ »ç¿ë.
+             * Á¶°ÇÀ» ºñ±³ÇØ¼­ ÆÇ´ÜÇÏ´Â ±¸¹®À¸·Î if, else if, else ¼¼°¡Áö Å°¿öµå »ç¿ë.
              * 
              */
 
-            // ë‘ê°œì˜ ì •ìˆ˜ ì¤‘ ë” í° ìˆ˜ë¥¼ ì°¾ëŠ” í”„ë¡œê·¸ëž¨
+            // µÎ°³ÀÇ Á¤¼ö Áß ´õ Å« ¼ö¸¦ Ã£´Â ÇÁ·Î±×·¥
             /*int numX,numY;
-            Console.Write("Xê°’ì„ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+            Console.Write("X°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä. -> ");
             int.TryParse(Console.ReadLine(), out numX);
-            Console.Write("Yê°’ì„ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+            Console.Write("Y°ªÀ» ÀÔ·ÂÇÏ¼¼¿ä. -> ");
             int.TryParse(Console.ReadLine(), out numY);
 
             if (numX < numY)
             {
-                Console.WriteLine("Yê°€ Xë³´ë‹¤ í½ë‹ˆë‹¤.");
+                Console.WriteLine("Y°¡ Xº¸´Ù Å®´Ï´Ù.");
             }
             else
             {
-                Console.WriteLine("Xê°€ Yë³´ë‹¤ í¬ê±°ë‚˜ ê°™ìŠµë‹ˆë‹¤.");
+                Console.WriteLine("X°¡ Yº¸´Ù Å©°Å³ª °°½À´Ï´Ù.");
             }
             Console.WriteLine();*/
 
-            // ì»µì˜ ì‚¬ì´ì¦ˆë¥¼ ë°›ì•„ì„œ 100ml ë¯¸ë§Œì€ small, 100mlì´ìƒ 200ml ë¯¸ë§Œì€ medium, 200ml ì´ìƒì€
-            // largeë¼ê³  ì¶œë ¥í•˜ëŠ” if-elseë¬¸ì„ ìž‘ì„±
+            // ÄÅÀÇ »çÀÌÁî¸¦ ¹Þ¾Æ¼­ 100ml ¹Ì¸¸Àº small, 100mlÀÌ»ó 200ml ¹Ì¸¸Àº medium, 200ml ÀÌ»óÀº
+            // large¶ó°í Ãâ·ÂÇÏ´Â if-else¹®À» ÀÛ¼º
             /*
             int sizeCup;
-            Console.Write("ì»µ ì‚¬ì´ì¦ˆë¥¼ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+            Console.Write("ÄÅ »çÀÌÁî¸¦ ÀÔ·ÂÇÏ¼¼¿ä. -> ");
             int.TryParse(Console.ReadLine(), out sizeCup);
 
             if(sizeCup < 100 && sizeCup > 0)
             {
-                Console.WriteLine($"ì»µì˜ ìš©ëŸ‰ì€ {sizeCup}mlì´ë©° smallìž…ë‹ˆë‹¤.");
+                Console.WriteLine($"ÄÅÀÇ ¿ë·®Àº {sizeCup}mlÀÌ¸ç smallÀÔ´Ï´Ù.");
             }
             else if(sizeCup >= 100 && sizeCup < 200)
             {
-                Console.WriteLine($"ì»µì˜ ìš©ëŸ‰ì€ {sizeCup}mlì´ë©° mediumìž…ë‹ˆë‹¤.");
+                Console.WriteLine($"ÄÅÀÇ ¿ë·®Àº {sizeCup}mlÀÌ¸ç mediumÀÔ´Ï´Ù.");
             }
             else if (sizeCup > 200)
             {
-                Console.WriteLine($"ì»µì˜ ìš©ëŸ‰ì€ {sizeCup}mlì´ë©° largeìž…ë‹ˆë‹¤.");
+                Console.WriteLine($"ÄÅÀÇ ¿ë·®Àº {sizeCup}mlÀÌ¸ç largeÀÔ´Ï´Ù.");
             }
             else
             {
-                Console.WriteLine($"ì»µì´ë¼ê³  ë¶€ë¥¼ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+                Console.WriteLine($"ÄÅÀÌ¶ó°í ºÎ¸¦ ¼ö ¾ø½À´Ï´Ù.");
             }*/
 
-            // ë¹„ë°€ ì½”ë“œ ë§žì¶”ê¸°
-            // ë¹„ë°€ ì½”ë“œëŠ” Aë¶€í„° Zì‚¬ì´ì˜ ë¬¸ìž
-            // ì‚¬ìš©ìžëŠ” ì»´í“¨í„°ì—ê²Œ ì½”ë“œë¥¼ ì¶”ì¸¡í•˜ê³  ì»´í“¨í„°ëŠ” ì •ë‹µ í˜¹ì€ ížŒíŠ¸ë¥¼ ì¤€ë‹¤.
+            // ºñ¹Ð ÄÚµå ¸ÂÃß±â
+            // ºñ¹Ð ÄÚµå´Â AºÎÅÍ Z»çÀÌÀÇ ¹®ÀÚ
+            // »ç¿ëÀÚ´Â ÄÄÇ»ÅÍ¿¡°Ô ÄÚµå¸¦ ÃßÃøÇÏ°í ÄÄÇ»ÅÍ´Â Á¤´ä È¤Àº ÈùÆ®¸¦ ÁØ´Ù.
 
             const char com = 'G';
             int comCode = Convert.ToInt32(com);
-            Console.Write("ë¹„ë°€ ì½”ë“œë¥¼ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+            Console.Write("ºñ¹Ð ÄÚµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä. -> ");
 
             char secret = Convert.ToChar(Console.ReadLine());
             int code = Convert.ToInt32(secret);
@@ -90,35 +90,35 @@ namespace WhatisOperator
                 }
                 else
                 {
-                    Console.Write("ë¹„ë°€ ì½”ë“œë¥¼ ì œëŒ€ë¡œ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+                    Console.Write("ºñ¹Ð ÄÚµå¸¦ Á¦´ë·Î ÀÔ·ÂÇÏ¼¼¿ä. -> ");
                     secret = Convert.ToChar(Console.ReadLine());
                 }
                 if (code == comCode)
                 {
-                    Console.WriteLine($"{secret}ì€(ëŠ”) ì •ë‹µìž…ë‹ˆë‹¤.");
+                    Console.WriteLine($"{secret}Àº(´Â) Á¤´äÀÔ´Ï´Ù.");
                     break;
                 }
                 else if(code >= 65 && code <= 90)
                 {
                     if (code < comCode)
                     {
-                        Console.WriteLine($"{secret}ì€(ëŠ”) ë¹„ë°€ ì½”ë“œë³´ë‹¤ ì•žì— ìžˆìŠµë‹ˆë‹¤.");
+                        Console.WriteLine($"{secret}Àº(´Â) ºñ¹Ð ÄÚµåº¸´Ù ¾Õ¿¡ ÀÖ½À´Ï´Ù.");
                     }
                     else
                     {
-                        Console.WriteLine($"{secret}ì€(ëŠ”) ë¹„ë°€ ì½”ë“œë³´ë‹¤ ë’¤ì— ìžˆìŠµë‹ˆë‹¤.");
+                        Console.WriteLine($"{secret}Àº(´Â) ºñ¹Ð ÄÚµåº¸´Ù µÚ¿¡ ÀÖ½À´Ï´Ù.");
                     }
-                    Console.Write("ë¹„ë°€ ì½”ë“œë¥¼ ë‹¤ì‹œ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+                    Console.Write("ºñ¹Ð ÄÚµå¸¦ ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä. -> ");
                     secret = Convert.ToChar(Console.ReadLine());
                 }
             }
 
-            // ì„¸ ê°œì˜ ì •ìˆ˜ ì¤‘ì—ì„œ í° ìˆ˜ ì°¾ê¸°
-            // ì‚¬ìš©ìžë¡œë¶€í„° ë°›ì€ 3ê°œì˜ ì •ìˆ˜ ì¤‘ì—ì„œ ê°€ìž¥ í° ìˆ˜ë¥¼ ì°¾ëŠ” í”„ë¡œê·¸ëž¨ ìž‘ì„±.
-            // 3ê°œì˜ ì •ìˆ˜ë¥¼ í•œ ë²ˆì— ìž…ë ¥ë°›ì•„ ê°€ìž¥ í° ìˆ˜ë¥¼ ì¶œë ¥
+            // ¼¼ °³ÀÇ Á¤¼ö Áß¿¡¼­ Å« ¼ö Ã£±â
+            // »ç¿ëÀÚ·ÎºÎÅÍ ¹ÞÀº 3°³ÀÇ Á¤¼ö Áß¿¡¼­ °¡Àå Å« ¼ö¸¦ Ã£´Â ÇÁ·Î±×·¥ ÀÛ¼º.
+            // 3°³ÀÇ Á¤¼ö¸¦ ÇÑ ¹ø¿¡ ÀÔ·Â¹Þ¾Æ °¡Àå Å« ¼ö¸¦ Ãâ·Â
             int num1,num2,num3;
             char delimiterChars = ' ';
-            Console.Write("3ê°œì˜ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+            Console.Write("3°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. -> ");
             string three = Console.ReadLine();
             string[] threeNumber = three.Split(delimiterChars);
 
@@ -133,42 +133,42 @@ namespace WhatisOperator
 
                     if (num1 > num2 && num1 > num3)
                     {
-                        Console.WriteLine($"ê°€ìž¥ í° ìˆ˜ëŠ” {num1}ìž…ë‹ˆë‹¤.");
+                        Console.WriteLine($"°¡Àå Å« ¼ö´Â {num1}ÀÔ´Ï´Ù.");
                         break;
                     }
                     else if (num2 > num1 && num2 > num3)
                     {
-                        Console.WriteLine($"ê°€ìž¥ í° ìˆ˜ëŠ” {num2}ìž…ë‹ˆë‹¤.");
+                        Console.WriteLine($"°¡Àå Å« ¼ö´Â {num2}ÀÔ´Ï´Ù.");
                         break;
                     }
                     else if (num3 > num1 && num3 > num2)
                     {
-                        Console.WriteLine($"ê°€ìž¥ í° ìˆ˜ëŠ” {num3}ìž…ë‹ˆë‹¤.");
+                        Console.WriteLine($"°¡Àå Å« ¼ö´Â {num3}ÀÔ´Ï´Ù.");
                         break;
                     }
                     else if (num1 == num2 && num1 > num3) 
                     {
-                        Console.WriteLine($"ê°€ìž¥ í° ìˆ˜ëŠ” {num1}ìž…ë‹ˆë‹¤.");
+                        Console.WriteLine($"°¡Àå Å« ¼ö´Â {num1}ÀÔ´Ï´Ù.");
                         break;
                     }
                     else if (num1==num3 && num1 > num2)
                     {
-                        Console.WriteLine($"ê°€ìž¥ í° ìˆ˜ëŠ” {num1}ìž…ë‹ˆë‹¤.");
+                        Console.WriteLine($"°¡Àå Å« ¼ö´Â {num1}ÀÔ´Ï´Ù.");
                         break;
                     }
                     else if (num2==num3&& num2 > num1)
                     {
-                        Console.WriteLine($"ê°€ìž¥ í° ìˆ˜ëŠ” {num2}ìž…ë‹ˆë‹¤.");
+                        Console.WriteLine($"°¡Àå Å« ¼ö´Â {num2}ÀÔ´Ï´Ù.");
                         break;
                     }
                     else if (num1 == num2 && num2 == num3)
                     {
-                        Console.WriteLine($"ê°€ìž¥ í° ìˆ˜ëŠ” {num1}ìž…ë‹ˆë‹¤.");
+                        Console.WriteLine($"°¡Àå Å« ¼ö´Â {num1}ÀÔ´Ï´Ù.");
                         break;
                     }
                     else
                     {
-                        Console.Write("3ê°œì˜ ì •ìˆ˜ë¥¼ ì œëŒ€ë¡œ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+                        Console.Write("3°³ÀÇ Á¤¼ö¸¦ Á¦´ë·Î ÀÔ·ÂÇÏ¼¼¿ä. -> ");
                         three = Console.ReadLine();
                         threeNumber = three.Split(delimiterChars);
                     }
@@ -176,7 +176,7 @@ namespace WhatisOperator
                 }
                 else
                 {
-                    Console.Write("3ê°œì˜ ì •ìˆ˜ë¥¼ ì œëŒ€ë¡œ ìž…ë ¥í•˜ì„¸ìš”. -> ");
+                    Console.Write("3°³ÀÇ Á¤¼ö¸¦ Á¦´ë·Î ÀÔ·ÂÇÏ¼¼¿ä. -> ");
                     three = Console.ReadLine();
                     threeNumber = three.Split(delimiterChars);
                 }
